@@ -1,12 +1,17 @@
+// const findString = (word, char) => {
+//   let count = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] === char) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
 const findString = (word, char) => {
-  let count = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === char) {
-      count++;
-    }
-  }
-  return count;
+  return word.split("").filter((currentChar) => currentChar === char).length;
 };
+
+console.log(findString("hellllo", "l"));
 console.log(findString("hellllo", "l"));
 
 const minMax = (arr) => {
